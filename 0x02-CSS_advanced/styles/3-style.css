@@ -1,0 +1,24 @@
+/* styles/2-style.css */
+
+/* Custom properties */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+  /* Default text color */
+}
+
+/* Reset color for body and anchor elements */
+body,
+a {
+  color: var(--text-color);
+}
+
+/* Reset color for section-tagline and card-category using custom properties */
+.section-tagline,
+.card-category {
+  color: var(--color-primary);
+}
