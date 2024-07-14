@@ -1,0 +1,79 @@
+/* Define variables for colors */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+
+    /* Define variables for font families */
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /* Define variables for font sizes */
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    /* Define variables for font weights */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Define variables for line heights */
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+}
+
+/* Apply global styles */
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    /* Set base font size for easy rem calculations */
+}
+
+body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    /* Set base font size */
+    font-weight: var(--font-weight-regular);
+    /* Set regular font weight */
+    line-height: var(--line-height-base);
+    /* Set base line height */
+}
+
+/* Apply specific styles for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+    /* Set bold font weight for headings */
+}
+
+/* Apply styles for links */
+a {
+    color: var(--text-color);
+}
+
+/* Apply styles for visually hidden elements */
+.visually-hidden {
+    display: none;
+}
+
+/* Apply styles for elements with the card-category class */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Apply styles for elements with the section-tagline class */
+.section-tagline {
+    color: var(--color-primary);
+}
